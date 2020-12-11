@@ -1,0 +1,29 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 3b54ad7998cceb84fcd9070af4bd670c1202269d48430dbaab31da7b666eb342
+
+name:           toy-tsp-solver
+version:        0.1.0.0
+homepage:       https://github.com/gokuld/toy-tsp-solver#readme
+license:        GPL-3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable toy-tsp-solver
+  main-is: Main.hs
+  other-modules:
+      SimulatedAnnealing
+      TSP
+      Paths_toy_tsp_solver
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , random
+  default-language: Haskell2010
